@@ -32,6 +32,7 @@ body {
     align-items: center;
     position: relative;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     margin-bottom: 80px;
     box-sizing: content-box;
 }
@@ -278,7 +279,8 @@ body {
     justify-content: flex-end;
     position: relative;
     height: 56.25em; /* 900px */
-    height: 100vh !important;
+    /* height: 100vh !important; */
+    height: calc(var(--vh, 1vh) * 100) !important;
     width: 100vw;
     color: var(--wt);
     background-color: var(--bk) !important;
@@ -755,6 +757,7 @@ h3.title.active {
         height: 100vw;
         /* min-height: 50vh; */
         max-height: 50vh;
+        max-height: calc(var(--vh, 1vh) * 50);
         max-width: none;
     }
 
@@ -796,7 +799,7 @@ h3.title.active {
     .sub_visual .sub_visual_item img {
         width: 100%;
         object-fit: cover;
-        max-height: 50vh;
+        max-height: calc(var(--vh, 1vh) * 50);
     }
 
     .swiper_wrap {
@@ -822,6 +825,7 @@ h3.title.active {
         overflow: hidden;
         height: 151vw;
         min-height: 44vh;
+        min-height: calc(var(--vh, 1vh) * 44);
         max-height: calc(var(--vh, 1vh) * 100 - 25rem);
     }
     .swiper_wrap .swiper_itme_footer .swiper_item_info {
