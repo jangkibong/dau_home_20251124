@@ -743,10 +743,10 @@ $(function () {
 
     $(window).on("resize", function () {
         const currentWidth = $(window).width();
+        setRealVH();
         if (currentWidth !== lastWidth) {
             // 가로폭이 달라졌을 때만 호출
             updateMainVisual();
-            setRealVH();
             lastWidth = currentWidth; // 이전 폭 갱신
         }
     });
