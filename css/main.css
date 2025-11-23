@@ -6,6 +6,8 @@ body {
 body {
     -ms-overflow-style: none;
     font-size: 0.833331vw; /* 1920px 기준 16px */
+    width: 100vw;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -68,7 +70,7 @@ body {
 } */
 
 /* intro -start */
-.section#intro{
+.section#intro {
     height: calc(var(--vh, 1vh) * 200);
 }
 .section .main_visual.intro {
@@ -414,13 +416,13 @@ body {
     text-align: right;
 }
 
-h3.title{
+h3.title {
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.8s ease;
 }
 
-h3.title.active{
+h3.title.active {
     opacity: 1;
     transform: translateY(0);
 }
